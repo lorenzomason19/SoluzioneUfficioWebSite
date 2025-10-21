@@ -1,0 +1,382 @@
+/* ==================== */
+/* DOWNLOAD PAGE STYLES */
+/* ==================== */
+
+/* Download Section */
+.download-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.download-intro {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.download-intro h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.download-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Download Grid */
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+/* Download Card */
+.download-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.download-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.download-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.download-icon.windows {
+    background: linear-gradient(135deg, #0078d4, #00bcf2);
+}
+
+.download-icon.macos {
+    background: linear-gradient(135deg, #000000, #434343);
+}
+
+.download-icon.linux {
+    background: linear-gradient(135deg, #f8c000, #e95420);
+}
+
+.download-icon svg {
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+}
+
+.download-card h3 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.version {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.compatibility {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.features-list {
+    list-style: none;
+    text-align: left;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.features-list li {
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.download-btn {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.download-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.file-info {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* How It Works Section */
+.how-it-works {
+    max-width: 1100px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 3rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.step {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+}
+
+.step h3 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.step p {
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Features Section */
+.supremo-features {
+    max-width: 1100px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.supremo-features h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.feature-icon svg {
+    width: 35px;
+    height: 35px;
+    color: var(--white);
+}
+
+.feature-item h3 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Support Section */
+.support-info {
+    max-width: 800px;
+    margin: 5rem auto 0;
+}
+
+.support-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.support-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.support-card > p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.support-contacts {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    min-width: 120px;
+}
+
+.contact-item span {
+    opacity: 0.95;
+}
+
+/* Responsive Design for Download Page */
+@media (max-width: 768px) {
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .download-intro h2,
+    .how-it-works h2,
+    .supremo-features h2 {
+        font-size: 1.8rem;
+    }
+
+    .support-card {
+        padding: 2rem;
+    }
+
+    .support-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .support-contacts {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .contact-item strong {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .download-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .download-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .download-intro h2 {
+        font-size: 1.6rem;
+    }
+
+    .support-card {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,245 @@
+/* ==================== */
+/* SERVICES PAGE STYLES */
+/* ==================== */
+
+/* Services Detail Section */
+.services-detail-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+/* Service Detail Card */
+.service-detail-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.service-detail-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.service-detail-card:last-child {
+    margin-bottom: 0;
+}
+
+/* Alternate Layout for Cards */
+.service-detail-card.reverse .service-detail-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Service Detail Content */
+.service-detail-content {
+    max-width: 100%;
+}
+
+.service-detail-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.service-detail-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+}
+
+.service-detail-content h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+}
+
+.service-detail-content h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Service List */
+.service-list {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.service-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.service-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.service-list li strong {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+/* Service Benefits */
+.service-benefits {
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2.5rem 0;
+}
+
+.service-benefits h3 {
+    margin-top: 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.benefit-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.benefit-icon {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.benefit-item span:last-child {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Service CTA Button */
+.service-detail-content .btn {
+    margin-top: 2rem;
+}
+
+/* Responsive Design for Services Page */
+@media (max-width: 768px) {
+    .services-detail-section {
+        padding: 60px 0;
+    }
+
+    .service-detail-card {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .service-detail-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .service-detail-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .service-detail-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-description {
+        font-size: 1rem;
+    }
+
+    .service-detail-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-benefits {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-detail-card {
+        padding: 1.5rem;
+    }
+
+    .service-detail-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-detail-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .service-detail-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-detail-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-list li {
+        padding-left: 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    .service-benefits {
+        padding: 1.2rem;
+    }
+
+    .benefit-item {
+        padding: 0.8rem;
+    }
+}
