@@ -4,183 +4,190 @@
 
 /* Page Header */
 .page-header {
-    padding: 140px 0 80px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--white);
-    text-align: center;
+  padding: 140px 0 80px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  color: var(--white);
+  text-align: center;
 }
 
 .page-header h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .page-header p {
-    font-size: 1.2rem;
-    opacity: 0.95;
-    max-width: 700px;
-    margin: 0 auto;
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Brands Section */
 .brands-section {
-    padding: 80px 0;
-    background-color: var(--light-color);
+  padding: 80px 0;
+  background-color: var(--light-color);
 }
 
 .brands-intro {
-    max-width: 900px;
-    margin: 0 auto 4rem;
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-color);
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
 }
 
 /* Brand Category */
 .brand-category {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .category-title {
-    font-size: 2rem;
-    color: var(--dark-color);
-    margin-bottom: 2.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid var(--primary-color);
-    display: inline-block;
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary-color);
+  display: inline-block;
 }
 
 /* Brands Grid */
 .brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
 }
 
 /* Brand Card */
 .brand-card {
-    background-color: var(--white);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .brand-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
 }
 
 .brand-logo {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    padding: 2.5rem;
-    text-align: center;
-    min-height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 2.5rem;
+  text-align: center;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand-logo h3 {
-    font-size: 2rem;
-    color: var(--white);
-    margin: 0;
-    font-weight: 700;
-    letter-spacing: 1px;
+  font-size: 2rem;
+  color: var(--white);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .brand-logo img {
-    max-width: 180px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
+  max-width: 180px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .brand-description {
-    padding: 2rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .brand-description p {
-    color: var(--text-color);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
 .brand-products {
-    list-style: none;
-    margin-top: auto;
+  list-style: none;
+  margin-top: auto;
 }
 
 .brand-products li {
-    padding: 0.6rem 0;
-    color: var(--text-light);
-    position: relative;
-    padding-left: 1.5rem;
+  padding: 0.6rem 0;
+  color: var(--text-light);
+  position: relative;
+  padding-left: 1.5rem;
 }
 
 .brand-products li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--primary-color);
-    font-weight: bold;
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 /* Responsive Design for Brands Page */
 @media (max-width: 768px) {
-    .page-header {
-        padding: 120px 0 60px;
-    }
+  .page-header {
+    padding: 120px 0 60px;
+  }
 
-    .page-header h1 {
-        font-size: 2.2rem;
-    }
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
 
-    .page-header p {
-        font-size: 1rem;
-    }
+  .page-header p {
+    font-size: 1rem;
+  }
 
-    .brands-grid {
-        grid-template-columns: 1fr;
-    }
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .category-title {
-        font-size: 1.7rem;
-    }
+  .category-title {
+    font-size: 1.7rem;
+  }
 
-    .brand-logo {
-        padding: 2rem;
-        min-height: 120px;
-    }
+  .brand-logo {
+    padding: 2rem;
+    min-height: 120px;
+  }
 
-    .brand-logo h3 {
-        font-size: 1.6rem;
-    }
+  .brand-logo h3 {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .page-header h1 {
-        font-size: 1.8rem;
-    }
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
 
-    .brands-intro {
-        font-size: 1rem;
-    }
+  .brands-intro {
+    font-size: 1rem;
+  }
 
-    .category-title {
-        font-size: 1.5rem;
-    }
+  .category-title {
+    font-size: 1.5rem;
+  }
 
-    .brand-description {
-        padding: 1.5rem;
-    }
+  .brand-description {
+    padding: 1.5rem;
+  }
 }
